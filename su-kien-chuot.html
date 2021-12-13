@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+<form>
+    <img id="bong" src="https://2.bp.blogspot.com/-B2iiSR2sqVY/VeSZgGdwqUI/AAAAAAAAGYA/eupQLBSr8to/s1600/hinh-nen-3d-bong-da-tophinhpro.blogspot.com-678.jpg atyle" style="width: 300px">
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="Click Me" onclick="chay()">
+</form>
+<script>
+    let da = null;
+    da=document.getElementById('bong');
+    function sut() {
+        da= document.getElementById('bong');
+        da.style.position = 'relative';
+        da.style.left = '0px';
+    }
+    function chay() {
+        da.style.left = parseFloat(da.style.left) +10+'px';
+    }
+    window.onload = sut();
+</script>
+</body>
+</html>
